@@ -3,26 +3,10 @@ html{
     overflow-x: hidden;
 }
 
-/* vertical words */
- #turned{
-    color: rgb(6, 58, 58);
-    font-family: 'Kavoon', cursive;
-   text-transform: uppercase;
-   font-weight: 900;
-    writing-mode: vertical-lr;
-   text-orientation: mixed;
-    position: relative;
-    font-size: 9.92vh;
-    line-height: 21;
-    white-space: nowrap;
-    transform: translateX(-2%);
-    display: block;
-}
-
 /* welcome page */
 
 .welcome {
-  /* font-family: Georgia, cursive;  figure out font*/
+  font-family: "Rubik 80s Fade", cursive;
   background: rgb(6, 58, 58);
   transition: opacity .5s ease-out;
   height: 100vh;
@@ -60,28 +44,57 @@ html{
 
 .w {
   animation-delay: 0s;
+  color: rgb(238, 205, 163);
 }
 
 .e {
   animation-delay: 0.2s;
+  color: rgb(238, 205, 163);
 }
 
 .l {
   animation-delay: 0.4s;
+  color: rgb(238, 205, 163);
 }
 
 .c {
   animation-delay: 0.6s;
+  color: rgb(238, 205, 163);
 }
 
 .o {
   animation-delay: 0.8s;
+  color: rgb(238, 205, 163);
 }
 
 .m {
   animation-delay: 1s;
+  color: rgb(238, 205, 163);
 }
 
 .e2 {
   animation-delay: 1.2s;
+  color: rgb(238, 205, 163);
+}
+
+
+/* body  */
+
+body{
+  background-color: rgb(5, 43, 43);
+}
+/* vertical words */
+#turned{
+  color: rgb(213, 233, 233);
+  /* font-family: 'Kavoon', cursive; */
+ text-transform: uppercase;
+ font-weight: 900;
+  writing-mode: vertical-lr;
+ text-orientation: mixed;
+  position: relative;
+  font-size: 9.1vh;
+  line-height: 23;
+  white-space: nowrap;
+  transform: translateX(-2%);
+  display: block;
 }
