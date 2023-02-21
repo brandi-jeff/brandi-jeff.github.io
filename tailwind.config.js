@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/*.html"],
+  darkMode: "class",
+  content: ["./build/*.html",
+  "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -8,6 +10,9 @@ module.exports = {
         "my-orange": "#eecda3",
       },
       screens: {
+        xs: "390px",
+        // => @media (min-width: 390px) { ... }
+
         sm: "640px",
         // => @media (min-width: 640px) { ... }
 
@@ -30,16 +35,14 @@ module.exports = {
         // => @media (min-width: 1920px) { ... }
       },
       fontFamily: {
-        welcomeFont: [
-          "Rubik 80s Fade",
-          "cursive",
-          "../build/fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf",
-        ],
+        welcomeFont: ["Rubik 80s Fade", "cursive"],
         custom: ["Alice", "Georgia"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
   head: {
     link: [
       {

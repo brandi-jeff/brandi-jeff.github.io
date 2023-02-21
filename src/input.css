@@ -2,153 +2,179 @@
 @tailwind components;
 @tailwind utilities;
 
-/* welcome page */
-
+/* welcome page */ 
 .welcome {
-    font-family: "Rubik 80s Fade", cursive;
-    background: rgb(5, 58, 58);
-    transition: opacity .5s ease-out;
-    height: 100vh;
-    font-size: 30vh;
-    color: #fff;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .w, .e, .l, .c, .o, .m, .e2 {
-    animation: showLetter 1s ease-in-out forwards;
+  font-family: 'Rubik 80s Fade', cursive;
+  background: rgb(5, 58, 58);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  height: 100vh;
+  font-size: 30vh;
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.w,
+.e,
+.l,
+.c,
+.o,
+.m,
+.e2 {
+  animation: showLetter 1s ease-in-out forwards;
+  opacity: 0;
+  position: relative;
+}
+
+@keyframes showLetter {
+  0% {
     opacity: 0;
-    position:relative;
+    transform: translateY(-100%);
   }
-  
-  @keyframes showLetter {
-    0% {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  
-  .w {
-    animation-delay: 0s;
-    color: rgb(238, 205, 163);
+}
+
+.w {
+  animation-delay: 0s;
+  color: rgb(238, 205, 163);
+}
+
+.e {
+  animation-delay: 0.2s;
+  color: rgb(238, 205, 163);
+}
+
+.l {
+  animation-delay: 0.4s;
+  color: rgb(238, 205, 163);
+}
+
+.c {
+  animation-delay: 0.6s;
+  color: rgb(238, 205, 163);
+}
+
+.o {
+  animation-delay: 0.8s;
+  color: rgb(238, 205, 163);
+}
+
+.m {
+  animation-delay: 1s;
+  color: rgb(238, 205, 163);
+}
+
+.e2 {
+  animation-delay: 1.2s;
+  color: rgb(238, 205, 163);
+}
+
+
+/*  navbar */
+
+
+/* main body */
+#welcomeMsg {
+  font-family: 'Alice', Georgia, 'Times New Roman', Times, serif;
+  width: 30%;
+}
+
+#middleSect {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-image: url('../build/photos/gradient\ background.png');
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2;
+}
+
+#pic {
+  top: 31%;
+}
+
+#turned {
+  color: rgb(238, 205, 163);
+  font-family: 'Archivo Black';
+  text-transform: uppercase;
+  font-size: 8.2vh;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  white-space: nowrap;
+  transform: translateX(-2%);
+  display: block;
+}
+
+@media screen and (max-width: 390px) {
+  .welcome {
+    font-size: 8vh;
   }
-  
-  .e {
-    animation-delay: 0.2s;
-    color: rgb(238, 205, 163);
+
+  #welcomeMsg{
+    top: 70%;
+    width: 50%;
+    font-size: 22px;
+    left: 35%;
   }
-  
-  .l {
-    animation-delay: 0.4s;
-    color: rgb(238, 205, 163);
+  #pic {
+    top: 33%;
+    left: 23%;
   }
-  
-  .c {
-    animation-delay: 0.6s;
-    color: rgb(238, 205, 163);
-  }
-  
-  .o {
-    animation-delay: 0.8s;
-    color: rgb(238, 205, 163);
-  }
-  
-  .m {
-    animation-delay: 1s;
-    color: rgb(238, 205, 163);
-  }
-  
-  .e2 {
-    animation-delay: 1.2s;
-    color: rgb(238, 205, 163);
+}
+@media screen and (min-width: 1024px) {
+  #turned {
+    left: 49%;
   }
 
-#welcomeMsg{
-    font-family: "Alice", Georgia, 'Times New Roman', Times, serif;
-    width: 30%;
-    }
+  .welcome {
+    font-size: 25vh;
+  }
 
-    #middleSect{
-        border: 2px solid black;
-        background-image: url("../build/photos/gradient\ background.png");
-        background-attachment: fixed;
-        background-size: cover;
-        z-index: -5;
-    }
+  #pic {
+    top: 32%;
+  }
+}
 
-    #pic{
-      top: 31%;
-    }
-    
-    #turned{
-        color: rgb(238, 205, 163);
-        font-family: "Archivo Black";
-        text-transform: uppercase;
-        font-size: 8.2vh;
-        writing-mode: vertical-lr;
-        text-orientation: mixed;
-        white-space: nowrap;
-        transform: translateX(-2%);
-        display: block;
-      }
+@media screen and (min-width: 1280px) {
+  #turned {
+    left: 47%;
+  }
 
-      @media screen and (min-width: 1024px) {
-        #turned{
-          left: 49%;
-        }
+  .welcome {
+    font-size: 30vh;
+  }
 
-        .welcome{
-          font-size: 25vh;
-        }
+  #pic {
+    top: 32%;
+    right: 12%;
+  }
 
-        #pic{
-          top: 32%;
-        }
-    }
+  #welcomeMsg {
+    left: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #turned {
+    left: 47%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #turned {
+    left: 47%;
+  }
 
-      @media screen and (min-width: 1280px) {
-        #turned{
-          left: 47%;
-        }
-
-        .welcome{
-          font-size: 30vh;
-        }
-
-        #pic{
-          top: 32%;
-          right: 12%;
-        }
-
-        #welcomeMsg{
-          left: 10%;
-        }
-    }
-      @media screen and (min-width: 1440px) {
-        #turned{
-          left: 49%;
-        }
-
-    }
-      @media screen and (min-width: 1920px) {
-        #turned{
-          left: 47%;
-        }
-
-        #pic{
-          right: 18%;
-        }
-    }
+  #pic {
+    right: 16%;
+    top: 33%;
+  }
+}
