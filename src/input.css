@@ -96,7 +96,7 @@
   background-image: url('../build/photos/gradient\ background.png');
   background-attachment: fixed;
   background-size: cover;
-  z-index: -2;
+  z-index: -5;
 }
 
 #pic {
