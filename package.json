@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/tailwind.css --watch",
-    "prettier": "npx prettier --write **/*.html",
     "watch": "watch \"npn run dev\""
   },
   "repository": {
@@ -21,5 +20,8 @@
   "homepage": "https://github.com/brandi-jeff/brandi-jeff.github.io#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "flowbite": "^1.6.3"
   }
 }

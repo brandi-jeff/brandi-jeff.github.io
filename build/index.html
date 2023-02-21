@@ -1,56 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice with Tailwind</title>
-
-    <!-- reset CSS -->
-    <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
 
     <!-- tailwind -->
-    <link href="https://unpkg.com/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
-     <!-- fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Anton&family=Archivo+Black&family=Kavoon&family=Playfair+Display&family=Rubik+80s+Fade&family=Shadows+Into+Light&family=Ultra&display=swap" rel="stylesheet">
-     
-     <!-- CSS -->
-    <link rel="stylesheet" href="./css/tailwind.css">
-    <link rel="stylesheet" href="../src/input.css">
-</head>
-<body class="min-h-screen bg-my-teal text-my-orange">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Anton&family=Archivo+Black&family=Kavoon&family=Playfair+Display&family=Rubik+80s+Fade&family=Shadows+Into+Light&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+  </head>
+  
+  <body class="min-h-screen bg-my-teal text-my-orange">
 
     <!-- welcome page -->
-    <div class="welcome font-welcomeFont">
-        <div class="w">W</div>
-        <div class="e">E</div>
-        <div class="l">L</div>
-        <div class="c">C</div>
-        <div class="o">O</div>
-        <div class="m">M</div>
-        <div class="e2">E</div>
-      </div>
+    <div class="welcome font-welcomeFont z-0">
+      <div class="w">W</div>
+      <div class="e">E</div>
+      <div class="l">L</div>
+      <div class="c">C</div>
+      <div class="o">O</div>
+      <div class="m">M</div>
+      <div class="e2">E</div>
+    </div>
 
-    <main class="relative">
-
+      <main class="relative">
         <section id="turned" class="fixed">
-            <h1>BRANDI'S PORTFOLIO</h1>
+          <h1>BRANDI'S PORTFOLIO</h1>
         </section>
 
-        <section id="middleSect" class="p-40 fixed lg:top-56 3xl:top-52 4xl:top-72 w-screen">
-            <article>
-                <div id="welcomeMsg" class="text-my-orange lg:text-3xl 3xl:text-4xl 4xl:text-4xl text-center fixed lg:top-72 lg:left-28 xl:top-80 3xl:top-64 3xl:left-36 4xl:left-50 4xl:top-[360px]">
-                    <p>Hey! I am a Junior Software Developer currently learning and very much interested in frontend development.</p>
-                </div>
-                <div id="photo">
-                    <img src="./photos/profile_pic.jpg" alt="Brandi photo" class="w-72 h-72 rounded-full fixed lg:right-24 4xl:top-[305px]" id="pic">
-                </div>
-            </article>
-        </section>
+
+        <section id="navHeader" class="-z-0 h-48">
+        
+          <nav id="navBar" class="p-5  rounded bg-my-teal dark:bg-gray-800">
+            <div class="container flex items-center justify-between mx-auto">
+              <a href="#" class="flex items-center">
+                  <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+              </a>
+              <button data-collapse-toggle="navbar-hamburger" type="button" id ="menu" class="inline-flex items-center p-2 mr-10 text-sm text-my-orange rounded-lg hover:bg-my-teal focus:outline-none focus:ring-2 focus:ring-my-orange dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+                
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="hidden" id="navbar-hamburger">
+                <ul class="flex flex-row mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                  <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded dark:bg-blue-600" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Services</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </section>
+
+      <section
+        id="middleSect"
+        class="p-40 fixed xs: top-64 lg:top-56 3xl:top-52 4xl:top-72 w-screen"
+      >
+        <article>
+          <div
+            id="welcomeMsg"
+            class="text-my-orange xs: top-64 lg:text-3xl 3xl:text-4xl 4xl:text-4xl text-center fixed lg:top-72 lg:left-28 xl:top-80 3xl:top-64 3xl:left-36 4xl:left-50 4xl:top-[360px]"
+          >
+            <p>
+              Hey! I am a Junior Software Developer currently learning and very
+              much interested in frontend development.
+            </p>
+          </div>
+          <div id="photo">
+            <img
+              src="./photos/profile_pic.jpg"
+              alt="Brandi photo"
+              class="w-72 h-72 rounded-full fixed lg:right-24 4xl:top-[305px]"
+              id="pic"
+            />
+          </div>
+        </article>
+      </section>
     </main>
+
+    <!-- JS -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <script src="../build/scripts/main.js"></script>
-</body>
+  </body>
 </html>
