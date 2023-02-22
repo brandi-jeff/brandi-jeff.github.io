@@ -47,35 +47,44 @@
         </section>
 
 
-        <section id="navHeader" class="-z-0 h-48">
-        
-          <nav id="navBar" class="p-5  rounded bg-my-teal dark:bg-gray-800">
-            <div class="container flex items-center justify-between mx-auto">
-              <a href="#" class="flex items-center">
-                  <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
-              </a>
-              <button data-collapse-toggle="navbar-hamburger" type="button" id ="menu" class="inline-flex items-center p-2 mr-10 text-sm text-my-orange rounded-lg hover:bg-my-teal focus:outline-none focus:ring-2 focus:ring-my-orange dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+        <section id="navHeader" class="-z-0 h-48 p-5">         
+            <div data-dial-init class="fixed flex top-6 right-6 group">
+              <div id="speed-dial-menu-horizontal" class="flex items-center hidden mr-4 space-x-2">
                 
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-              </button>
-              <div class="hidden" id="navbar-hamburger">
-                <ul class="flex flex-row mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-                  <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded dark:bg-blue-600" aria-current="page">Home</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Services</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
-                  </li>
-                </ul>
+                  <a href="http://">
+                    <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/me_bitmoji.svg');">
+                        <span class="sr-only">About me button with bitmoji image</span>
+                    </button>
+                  </a>
+                  <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      About Me
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                  <a href="http://">
+                    <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/projects_bitmoji.svg');">
+                        <span class="sr-only">Projects button with bitmoji image</span>
+                    </button>
+                  </a>
+                  <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      Projects
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                  <a href="http://google.com">
+                    <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/resume_bitmoji.svg');">
+                    <span class="sr-only">Resume button with bitmoji image</span>
+                    </button>
+                  </a>
+                  <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      Resume
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
               </div>
+              <button type="button" data-dial-toggle="speed-dial-menu-horizontal" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class="flex items-center justify-center text-my-teal bg-my-orange rounded-sm w-20 h-20 hover:bg-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+                <svg class="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                  <span class="sr-only">Open actions menu</span>
+              </button>
             </div>
-          </nav>
+
 
     </section>
 
