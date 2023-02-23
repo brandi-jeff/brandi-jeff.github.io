@@ -43,14 +43,4 @@ module.exports = {
   plugins: [
     require('flowbite/plugin')
   ],
-  head: {
-    link: [
-      {
-        rel: "preload",
-        href: "../build/fonts/Rubik_80s_Fade/Rubik80sFade-Regular.ttf",
-        as: "font",
-        crossorigin: "anonymous",
-      },
-    ],
-  },
 };
