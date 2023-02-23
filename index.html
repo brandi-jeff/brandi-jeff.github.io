@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alice&family=Anton&family=Archivo+Black&family=Kavoon&family=Playfair+Display&family=Rubik+80s+Fade&family=Shadows+Into+Light&family=Ultra&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Anton&family=Archivo+Black&family=Kavoon&family=Playfair+Display&family=Rubik+80s+Fade&family=Shadows+Into+Light&family=Ultra"
       rel="stylesheet"
     />
 
@@ -48,9 +48,14 @@
 
 
         <section id="navHeader" class="-z-0 h-48 p-5">         
-            <div data-dial-init class="fixed flex top-6 right-6 group">
-              <div id="speed-dial-menu-horizontal" class="flex items-center hidden mr-4 space-x-2">
-                
+            <div data-dial-init class="fixed flex top-6 left-6 group">
+              
+                  <button type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class="flex mr-2 items-center justify-center text-my-teal bg-my-orange rounded-sm w-20 h-20 hover:bg-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+                    <svg class="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Open actions menu</span>
+                  </button>
+                  <div id="speed-dial-menu-top-left" class="hidden" > 
+                    <div class="flex flex-row items-center mr-4 space-x-2">
                   <a href="http://">
                     <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/me_bitmoji.svg');">
                         <span class="sr-only">About me button with bitmoji image</span>
@@ -69,7 +74,7 @@
                       Projects
                       <div class="tooltip-arrow" data-popper-arrow></div>
                   </div>
-                  <a href="http://google.com">
+                  <a href="https://drive.google.com/file/d/1-B1t_ihIf9t5JnqCo6I3e1ShSGp9MOhw/view?usp=sharing">
                     <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/resume_bitmoji.svg');">
                     <span class="sr-only">Resume button with bitmoji image</span>
                     </button>
@@ -79,11 +84,9 @@
                       <div class="tooltip-arrow" data-popper-arrow></div>
                   </div>
               </div>
-              <button type="button" data-dial-toggle="speed-dial-menu-horizontal" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class="flex items-center justify-center text-my-teal bg-my-orange rounded-sm w-20 h-20 hover:bg-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
-                <svg class="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                  <span class="sr-only">Open actions menu</span>
-              </button>
+              </div>
             </div>
+            
 
 
     </section>
