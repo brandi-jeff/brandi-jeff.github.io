@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./src/input.css" />
   </head>
   
-  <body class="min-h-screen bg-my-teal text-my-orange">
+  <body class="min-h-screen relative bg-my-teal text-my-orange">
 
     <!-- welcome page -->
     <div class="welcome font-welcomeFont z-0">
@@ -41,81 +41,88 @@
       <div class="e2">E</div>
     </div>
 
-      <main class="relative">
-        <section id="turned" class="fixed">
-          <h1>BRANDI'S PORTFOLIO</h1>
-        </section>
-
-
-        <section id="navHeader" class="-z-0 h-48 p-5">         
-            <div data-dial-init class="fixed flex top-6 left-6 group">
-              
-                  <button type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class="flex mr-2 items-center justify-center text-my-teal bg-my-orange rounded-sm w-20 h-20 hover:bg-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
-                    <svg class="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                      <span class="sr-only">Open actions menu</span>
-                  </button>
-                  <div id="speed-dial-menu-top-left" class="hidden" > 
-                    <div class="flex flex-row items-center mr-4 space-x-2">
-                  <a href="http://">
-                    <button type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/me_bitmoji.svg');">
-                        <span class="sr-only">About me button with bitmoji image</span>
-                    </button>
-                  </a>
-                  <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                      About Me
-                      <div class="tooltip-arrow" data-popper-arrow></div>
-                  </div>
-                  <a href="http://">
-                    <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/projects_bitmoji.svg');">
-                        <span class="sr-only">Projects button with bitmoji image</span>
-                    </button>
-                  </a>
-                  <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                      Projects
-                      <div class="tooltip-arrow" data-popper-arrow></div>
-                  </div>
-                  <a href="https://drive.google.com/file/d/1-B1t_ihIf9t5JnqCo6I3e1ShSGp9MOhw/view?usp=sharing">
-                    <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/resume_bitmoji.svg');">
-                    <span class="sr-only">Resume button with bitmoji image</span>
-                    </button>
-                  </a>
-                  <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                      Resume
-                      <div class="tooltip-arrow" data-popper-arrow></div>
-                  </div>
-              </div>
-              </div>
-            </div>
-            
-
-
+    <section id="turned"  class="absolute top-0">
+      <h1>BRANDI'S PORTFOLIO</h1>
     </section>
 
-      <section
-        id="middleSect"
-        class="p-40 fixed xs: top-64 lg:top-56 3xl:top-52 4xl:top-72 w-screen"
-      >
-        <article>
-          <div
-            id="welcomeMsg"
-            class="text-my-orange xs: top-64 lg:text-3xl 3xl:text-4xl 4xl:text-4xl text-center fixed lg:top-72 lg:left-28 xl:top-80 3xl:top-64 3xl:left-36 4xl:left-50 4xl:top-[360px]"
-          >
-            <p>
-              Hey! I am a Junior Software Developer currently learning and very
-              much interested in frontend development.
-            </p>
+      
+        
+      <section id="navHeader" class="relative h-48 pt-5 pl-5 pb-12">         
+          <div data-dial-init class="fixed flex top-6 left-6 group">
+            
+                <button type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class=" flex mr-2 items-center justify-center text-my-teal bg-my-orange rounded-sm w-20 h-20 hover:bg-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+                  <svg class="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Open actions menu</span>
+                </button>
+                <div id="speed-dial-menu-top-left" class="hidden" > 
+                  <div class="flex flex-row items-center mr-4 space-x-2">
+                <a href="../index.html">
+                  <button id="homeBtn" type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400 homeBtn" style="background-image: url('./build/photos/home_bitmoji.svg');">
+                      <span class="sr-only">Home button with bitmoji image</span>
+                  </button>
+                </a>
+                <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    Home
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <a href="./build/about_me.html">
+                  <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/me_bitmoji.svg');">
+                      <span class="sr-only">About me button with bitmoji image</span>
+                  </button>
+                </a>
+                <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  About Me
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <a href="http://">
+                  <button type="button" data-tooltip-target="tooltip-share" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/projects_bitmoji.svg');">
+                    <span class="sr-only">Projects button with bitmoji</span>
+                </button>
+                </a>
+                <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    Projects
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <a href="https://drive.google.com/file/d/1-B1t_ihIf9t5JnqCo6I3e1ShSGp9MOhw/view?usp=sharing" target="_blank">
+                  <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="bottom" class="bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400" style="background-image: url('./build/photos/resume_bitmoji.svg');">
+                  <span class="sr-only">Resume button with bitmoji image</span>
+                  </button>
+                </a>
+                <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    Resume
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+            </div>
+            </div>
           </div>
-          <div id="photo">
-            <img
-              src="./build/photos/profile_pic.jpg"
-              alt="Brandi photo"
-              class="w-72 h-72 rounded-full fixed lg:right-24 4xl:top-[305px]"
-              id="pic"
-            />
-          </div>
-        </article>
       </section>
-    </main>
+
+      <section class="absolute 2xl:pt-0.5 3xl:pt-28 ">
+      <main class="absolute">
+
+        <section 
+          id="middleSect" 
+          class="relative h-80 w-screen 2xl:mb-32">
+
+          <article class="absolute text-my-orange lg:text-3xl 2xl:text-4xl 3xl:text-4xl text-center 2xl:left-48">
+            <div id="welcomeMsg" class="relative 2xl:top-16">
+              <p>
+                Hey! I am a Junior Software Developer currently learning and very
+                much interested in frontend development.
+              </p>
+            </div>
+            <div id="photo" class="absolute 2xl:right-32 3xl:right-52">
+              <img
+                src="./build/photos/profile_pic.jpg"
+                alt="Brandi photo"
+                class=" rounded-full relative 2xl:bottom-60 3xl:bottom-64"
+                id="pic"
+              />
+            </div>
+          </article>
+        </section>
+      </main>
+    </section>
 
     <!-- JS -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
