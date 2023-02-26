@@ -84,8 +84,27 @@ html{
 }
 
 
-/*  navbar */
+/*  navbar and footer */
 
+#navHeader{
+  z-index: -1;
+}
+  
+  .nav_btns:hover {
+    transform: scale(1.1);
+}
+
+.foot_btns:hover {
+  transform: scale(1.5);
+}
+
+#toggle_switch{
+  z-index: -1;
+}
+
+#icons{
+  z-index: -1;
+}
 
 /* main body */
 #welcomeMsg {
@@ -95,7 +114,7 @@ html{
 #middleSect {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  background-image: url('../build/photos/gradient\ background.png');
+  background-image: url('../build/photos/dark_bkgd.png');
   background-attachment: fixed;
   background-size: cover;
   z-index: -5;
@@ -119,14 +138,6 @@ html{
   display: block;
   z-index: -2;
   margin-block: 50%;
-}
-
-#navHeader{
-  z-index: -1;
-}
-
-#icons{
-  z-index: -1;
 }
 
 @media screen and (min-width: 1920px) {

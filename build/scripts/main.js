@@ -1,7 +1,6 @@
 const welcomePg = document.querySelector(".welcome");
 const nav = document.querySelector("#navHeader");
 const links = document.querySelector("#icons");
-const home = document.querySelector("#homeBtn");
 
 setTimeout(function () {
   welcomePg.style.opacity = 0;
@@ -19,3 +18,7 @@ setTimeout(function () {
 }, 2370
 )
 
+setTimeout(function () {
+  toggle.style.zIndex = 1;
+}, 2370
+)
