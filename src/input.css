@@ -89,7 +89,6 @@ html{
 
 /* main body */
 #welcomeMsg {
-  font-family: 'Alice', Georgia, 'Times New Roman', Times, serif;
   width: 30%;
 }
 
@@ -123,7 +122,11 @@ html{
 }
 
 #navHeader{
-  z-index: 0;
+  z-index: -1;
+}
+
+#icons{
+  z-index: -1;
 }
 
 @media screen and (min-width: 1920px) {
