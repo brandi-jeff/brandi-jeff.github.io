@@ -32,6 +32,7 @@ module.exports = {
     fontFamily: {
       welcomeFont: ["Rubik 80s Fade", "cursive"],
       custom: ["Alice", "Georgia"],
+      turned: ['Archivo Black'],
     },
   },
   plugins: [
