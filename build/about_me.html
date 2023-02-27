@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,13 +28,13 @@
    <link rel="stylesheet" href="../src/input.css" />
    <link rel="stylesheet" href="../src/about.css">
 </head>
-<body class="min-h-screen text-my-orange">
+<body class="min-h-screen dark:text-my-orange text-my-teal">
 
   <!-- nav bar -->
   <section id="navHeader" class="h-48 p-5">         
     <div data-dial-init class="fixed flex top-6 left-6 group">
       
-          <button type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class=" flex mr-2 items-center justify-center text-my-teal bg-my-orange rounded-sm w-20 h-20 hover:bg-orange-300 ">
+          <button type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class=" flex mr-2 items-center justify-center dark:text-my-teal dark:bg-my-orange rounded-sm w-20 h-20 dark:hover:bg-orange-300 text-my-orange bg-my-teal hover:bg-teal-800">
             <svg class="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
               <span class="sr-only">Open actions menu</span>
           </button>
@@ -45,7 +45,7 @@
                 <span class="sr-only">Home button with bitmoji image</span>
             </button>
           </a>
-          <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip ">
               Home
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -54,7 +54,7 @@
                 <span class="sr-only">About me button with bitmoji image</span>
             </button>
           </a>
-          <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
             About Me
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -63,7 +63,7 @@
               <span class="sr-only">Projects button with bitmoji</span>
           </button>
           </a>
-          <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
               Projects
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -72,17 +72,16 @@
             <span class="sr-only">Resume button with bitmoji image</span>
             </button>
           </a>
-          <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+          <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip ">
               Resume
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
-          <a href="mailto:brandi.jefferson2@yahoo.com">
-            <button type="button" data-tooltip-target="tooltip-default" data-tooltip-placement="bottom" class="nav_btns bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border" style="background-image: url('./photos/email_bitmoji.svg');">
-              <span class="sr-only">Email button with bitmoji image</span>
+            <button id="pg_color_theme" type="button" data-tooltip-target="tooltip-default" data-tooltip-placement="bottom" class="nav_btns bg-cover bg-center flex justify-center items-center w-20 h-20 text-gray-500 hover:text-gray-900 bg-white rounded-sm border" style="background-image: url('./photos/bright_bitmoji.svg');">
+              
+              <span id="light_theme" class="sr-only">Color theme button with bitmoji image</span>
           </button>
-          </a>
-          <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-my-teal transition-opacity duration-300 bg-my-orange rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-              Email
+          <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
+              Too dark?
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
       </div>
@@ -93,23 +92,13 @@
 <!-- main body -->
 <main>
 
-  <section class="flex flex-row leading-normal">
-    <article id="about_letters" class="flex-col">
-      <div id="about" class="flex flex-row pl-32">
-        <div id="a">A</div>
-        <div id="b">B</div>
-        <div id="o">O</div>
-        <div id="u">U</div>
-        <div id="t">T</div>
-      </div>
-      <div id="me" class="flex flex-row pl-60">
-        <div id="m">M</div>
-        <div id="e">E</div>
-      </div>
-  </article>
+  <section class="flex flex-row">
+    <article id="about_letters" class="leading-tight pl-10 text-center">
+      <div>About Me</div>
+    </article>
 
 
-  <article id="about_me" class="relative bg-red-500">
+  <article id="about_me" class="relative border-solid border-red-500 border-2">
       <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, reiciendis. Suscipit iure reprehenderit nisi ad, non quis asperiores eos, odit sint veniam harum. Nemo alias tempore provident voluptate quidem vero?
       </p>
@@ -120,14 +109,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, reiciendis. S
 
 
 
-<footer id="icons" class=" bg-transparent sm:p-6 fixed bottom-0 right-2">
-  <div class="md:flex md:justify-between  ">
+<footer id="icons" class=" bg-transparent sm:p-6 fixed bottom-0 right-0">
+  <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
           
-  <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-my-orange sm:text-center dark:text-gray-400 pr-2">© 2023 Created by Yours Truly.
+  <div class="sm:flex sm:items-center sm:justify-evenly p-1 border-b-black">
+      <span class="text-sm text-my-orange sm:text-center dark:text-gray-400 p-2">© 2023 Created by Yours Truly.
       </span>
-      <div class="flex mt-4 space-x-3 sm:justify-center sm:mt-0">
+      <div class="flex mt-4 space-x-3 sm:justify-center sm:mt-0 p-2">
           <a href="https://github.com/brandi-jeff/" target="_blank" class="foot_btns text-my-orange hover:text-orange-300 dark:hover:text-white">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
               <span class="sr-only">GitHub account</span>
@@ -137,6 +126,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, reiciendis. S
                 d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" /></svg>
               <span class="sr-only">LinkedIn Account</span>
           </a>
+          <a href="mailto:brandi.jefferson2@yahoo.com" class="foot_btns text-my-orange hover:text-orange-300 dark:hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 -4 24 24" aria-hidden="true"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+            <span class="sr-only">Twitter page</span>
+        </a>
       </div>
   </div>
 </footer>
