@@ -17,8 +17,3 @@ setTimeout(function () {
   links.style.zIndex = 1;
 }, 2370
 )
-
-setTimeout(function () {
-  toggle.style.zIndex = 1;
-}, 2370
-)

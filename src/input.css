@@ -98,10 +98,6 @@ html{
   transform: scale(1.5);
 }
 
-#toggle_switch{
-  z-index: -1;
-}
-
 #icons{
   z-index: -1;
 }
