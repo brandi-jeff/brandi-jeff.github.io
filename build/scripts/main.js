@@ -17,3 +17,7 @@ setTimeout(function () {
   links.style.zIndex = 1;
 }, 2370
 )
+// setTimeout(function () {
+//   turned.style.zIndex = 1;
+// }, 2370
+// )

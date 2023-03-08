@@ -11,23 +11,17 @@ module.exports = {
       },
     },
     screens: {
-      'sm': '640px',
-    // => @media (min-width: 640px) { ... }
-
-    'md': '768px',
-    // => @media (min-width: 768px) { ... }
-
-    'lg': '1024px',
-    // => @media (min-width: 1024px) { ... }
-
-    'xl': '1280px',
-    // => @media (min-width: 1280px) { ... }
-
-    '2xl': {min:'1536px', max: "1915px"},
-    // => @media (min-width: 1536px) { ... }
-
-    '3xl': '1920px',
-    // => @media (min-width: 1920px) { ... }
+      'xl': {'max':'1537px'},
+      // => @media (max-width: 1537px) { ... }
+      
+        'lg': {'max':'1024px'},
+        // => @media (max-width: 1024px) { ... }
+      
+        'md': {'max':'640px'},
+        // => @media (max-width: 640px) { ... }
+      
+        'sm': {'max':'425px'},
+        // => @media (max-width: 425px) { ... }
     },
     fontFamily: {
       welcomeFont: ["Rubik 80s Fade", "cursive"],
@@ -39,3 +33,5 @@ module.exports = {
     require('flowbite/plugin')
   ]
 };
+
+
