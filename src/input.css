@@ -6,6 +6,10 @@ html{
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* welcome page */ 
 .welcome {
   font-family: 'Rubik 80s Fade', cursive;
@@ -87,7 +91,7 @@ html{
 /*  navbar and footer */
 
 #navHeader{
-  z-index: -1;
+  z-index: -2;
 }
   
   .nav_btns:hover {
@@ -117,10 +121,11 @@ html{
 }
 
 #photo{
+  width: 27%;
+  height: 27%;
   
-  width: 30%;
-  height: 30%;
 }
+
 
 #turned {
   color: rgb(238, 205, 163);
@@ -132,13 +137,19 @@ html{
   white-space: nowrap;
   transform: translateX(-2%);
   display: block;
-  z-index: -2;
+  z-index: -1;
   margin-block: 50%;
 }
 
 @media screen and (min-width: 1920px) {
   #turned {
     margin-block: 47%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #turned {
+    margin-block: 45%;
   }
 }
 
@@ -205,3 +216,41 @@ html{
     top: 33%;
   }
 } */
+
+
+/* About me */
+
+/* body */
+#aboutMe{
+  background-color: rgb(2, 37, 37);
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+}
+/* left section */
+
+
+#about_letters{
+  font-family: 'Archivo Black', cursive;
+  font-size: 5em;
+  text-transform: uppercase;
+  width: 62%;
+}
+
+#about_me_para{
+  width: 31%;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+#about{
+  padding-left: 3em;
+}
+#me{
+  padding-left: 4em;
+}
+
+#aboutPg{
+  padding-top: 5em;
+  padding-right: 6em;
+}
