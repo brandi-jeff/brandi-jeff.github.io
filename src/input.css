@@ -107,27 +107,36 @@ html{
 }
 
 /* main body */
-#welcomeMsg {
-  width: 30%;
-}
-
 #middleSect {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  background-image: url('../build/photos/dark_bkgd.png');
-  background-attachment: fixed;
-  background-size: cover;
   z-index: -5;
 }
 
-#photo{
-  width: 27%;
-  height: 27%;
-  
+video{
+  width: 100%;
 }
 
+#photo{
+  width: 28%;
+  height: 27%;
+}
 
-#turned {
+@media screen and (max-width: 1024px) {
+  .welcome {
+    font-size: 20vh;
+  }
+}
+@media screen and (max-width: 640px) {
+  .welcome {
+    font-size: 15vh;
+  }
+  #middleSect{
+    margin-top: 3em;
+  }
+}
+
+/* #turned {
   color: rgb(238, 205, 163);
   font-family: 'Archivo Black';
   text-transform: uppercase;
@@ -139,24 +148,9 @@ html{
   display: block;
   z-index: -1;
   margin-block: 50%;
-}
+} */
 
-@media screen and (min-width: 1920px) {
-  #turned {
-    margin-block: 47%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #turned {
-    margin-block: 45%;
-  }
-}
-
-/* @media screen and (max-width: 390px) {
-  .welcome {
-    font-size: 8vh;
-  }
+/* 
 
   #welcomeMsg{
     top: 70%;
@@ -221,11 +215,10 @@ html{
 /* About me */
 
 /* body */
-#aboutMe{
+#aboutMe, #home, #projects{
   background-color: rgb(2, 37, 37);
   background-size: cover;
   background-repeat: no-repeat; 
-
 }
 /* left section */
 

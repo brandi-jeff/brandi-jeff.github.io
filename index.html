@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./src/input.css" />
   </head>
   
-  <body class="min-h-screen relative bg-my-teal text-my-orange">
+  <body id="home" class="min-h-screen relative text-my-orange">
 
     <!-- welcome page -->
     <div class="welcome font-welcomeFont z-0">
@@ -41,16 +41,16 @@
       <div class="e2">E</div>
     </div>
 
-    <section id="turned"  class="absolute top-0">
+    <!-- <section id="turned"  class="absolute top-0">
       <h1>BRANDI'S PORTFOLIO</h1>
-    </section>
+    </section> -->
 
       <!-- nav bar -->
         
       <section id="navHeader" class=" relative h-48 pt-5 pb-12">         
           <div data-dial-init class="fixed flex top-6 left-6 group">
             
-                <button type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class=" flex mr-2 items-center justify-center text-my-orange bg-my-teal rounded-sm w-20 h-20 dark:text-my-teal dark:bg-my-orange">
+                <button id="mainNavBtn" type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class=" flex mr-2 items-center justify-center text-my-orange bg-my-teal rounded-sm w-20 h-20 dark:text-my-teal dark:bg-my-orange">
                   <svg class="w-10 h-10" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                     <span class="sr-only">Open actions menu</span>
                 </button>
@@ -102,20 +102,21 @@
 
         <section 
           id="middleSect" 
-          class="relative h-80 w-screen text-my-orange text-center text-4xl md:text-lg xl:text-2xl">
-            <div id="welcomeMsg" class="relative font-custom pt-4 md:left-2 xl:left-48 xl:top-12">
-              <p>
-                Hey! I am a Frontend Developer who is passionate about using my creativity to build amazing web applications.
-              </p>
-            </div>
-            <div id="photo" class="absolute xl:right-32 right-52 bottom-1 top-32 xl:top-40">
-              <img
-                src="./build/photos/profile_pic.jpg"
-                alt="Brandi photo"
-                class=" rounded-full relative xl:bottom-60 bottom-64"
-                id="pic"
-              />
-            </div>
+          class="relative w-screen">
+          <div id="photo" class="absolute left-72 -top-8 lg:-top-1 xl:-top-5">
+            <img
+              src="./build/photos/profile_pic.jpg"
+              alt="Brandi photo"
+              class=" rounded-full relative lg:-top-1"
+              id="pic"
+            />
+          </div>
+          <div>
+            <video  id="banner" autoplay loop>
+              <source src="./build/photos/banner.mp4?v=123" type="video/mp4">
+            </video>
+          </div>
+            
 
       </main>
     </section>
@@ -123,7 +124,7 @@
     <!-- footer  -->
     <footer id="icons" class=" bg-transparent fixed bottom-0 right-0">
       <div class="md:flex md:justify-between mb-2 md:mb-0">              
-        <div class="sm:flex sm:items-center sm:justify-evenly p-1 border-b-black">
+        <div class="sm:flex sm:items-center sm:justify-evenly md:flex md:items-center md:justify-evenly p-1 border-b-black">
             <span class="text-sm text-my-teal  dark:text-my-orange pt-5 pr-1">© 2023 Created by Yours Truly.
             </span>
             <div class="flex mt-4 space-x-3 sm:justify-center sm:mt-0 p-2">
