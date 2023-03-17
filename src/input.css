@@ -6,6 +6,10 @@ html{
   overflow-x: hidden;
 }
 
+#home{
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -126,6 +130,9 @@ video{
   .welcome {
     font-size: 20vh;
   }
+  #middleSect{
+    margin-top: 2em;
+  }
 }
 @media screen and (max-width: 640px) {
   .welcome {
@@ -135,6 +142,7 @@ video{
     margin-top: 3em;
   }
 }
+
 
 /* #turned {
   color: rgb(238, 205, 163);
@@ -246,4 +254,38 @@ video{
 #aboutPg{
   padding-top: 5em;
   padding-right: 6em;
+}
+
+@media screen and (max-width: 425px) {
+  .welcome {
+    font-size: 10vh;
+  }
+
+  #icons{
+    right: 2em;
+  }
+  #middleSect{
+    margin-top: 4em;
+  }
+  #about_me_para{
+    width: 100%;
+    margin-left: 2em;
+   
+  }
+  #me{
+    padding-left: 2.3em;
+    
+  }
+
+  #about{
+    padding-left: 1.2em;
+    line-height: 1em;
+  }
+
+  #about_letters {
+    font-size: 4em;
+  }
+  #aboutPg{
+    padding-top: 0;
+  }
 }
