@@ -112,8 +112,8 @@ html{
 
 /* main body */
 #middleSect {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid #BC9CEC;
+  border-bottom: 2px solid #BC9CEC;
   z-index: -5;
 }
 
@@ -121,18 +121,20 @@ video{
   width: 100%;
 }
 
-#photo{
-  width: 28%;
-  height: 27%;
-}
-
 @media screen and (max-width: 1024px) {
   .welcome {
-    font-size: 20vh;
+    font-size: 12vh;
+    padding-bottom: 1.5em;
   }
   #middleSect{
-    margin-top: 2em;
+    margin-top: 8em;
   }
+
+  /* #photo{
+    width: 32%;
+    height: 32%;
+  } */
+
 }
 @media screen and (max-width: 640px) {
   .welcome {
@@ -142,82 +144,6 @@ video{
     margin-top: 3em;
   }
 }
-
-
-/* #turned {
-  color: rgb(238, 205, 163);
-  font-family: 'Archivo Black';
-  text-transform: uppercase;
-  font-size: 8.2vh;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  white-space: nowrap;
-  transform: translateX(-2%);
-  display: block;
-  z-index: -1;
-  margin-block: 50%;
-} */
-
-/* 
-
-  #welcomeMsg{
-    top: 70%;
-    width: 50%;
-    font-size: 22px;
-    left: 35%;
-  }
-  #pic {
-    top: 33%;
-    left: 23%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #turned {
-    left: 49%;
-  }
-
-  .welcome {
-    font-size: 25vh;
-  }
-
-  #pic {
-    top: 32%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  #turned {
-    left: 47%;
-  }
-
-  .welcome {
-    font-size: 30vh;
-  }
-
-  #pic {
-    left: 68%;
-  }
-
-  #welcomeMsg {
-    left: 9%;
-    bottom: 22%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  #turned {
-    left: 47%;
-  }
-}
-@media screen and (min-width: 1920px) {
-  #turned {
-    left: 47%;
-  }
-
-  #pic {
-    right: 16%;
-    top: 33%;
-  }
-} */
 
 
 /* About me */
@@ -230,62 +156,57 @@ video{
 }
 /* left section */
 
+ #about{
+  width: 58%;
+}
 
 #about_letters{
   font-family: 'Archivo Black', cursive;
   font-size: 5em;
   text-transform: uppercase;
-  width: 62%;
+  width: 80%;
+  margin-left: 33%;
 }
 
-#about_me_para{
-  width: 31%;
-  font-size: 1.5em;
-  padding: 1em;
+.words{
+  width: 100%;
+  padding-bottom: .4em;
+
+}
+#photo{
+  max-width: max-content;
+  max-height: max-content;
 }
 
-#about{
-  padding-left: 3em;
-}
-#me{
-  padding-left: 4em;
-}
-
-#aboutPg{
-  padding-top: 5em;
-  padding-right: 6em;
+#pic{
+  border: 4px solid #BC9CEC;
+  border-radius: 27px;
 }
 
 @media screen and (max-width: 425px) {
   .welcome {
-    font-size: 10vh;
+    font-size: 9vh;
   }
 
   #icons{
     right: 2em;
   }
   #middleSect{
-    margin-top: 4em;
-  }
-  #about_me_para{
-    width: 100%;
-    margin-left: 2em;
-   
-  }
-  #me{
-    padding-left: 2.3em;
-    
+    margin-top: 7.5em;
   }
 
   #about{
-    padding-left: 1.2em;
+    padding-left: 3em;
     line-height: 1em;
   }
 
-  #about_letters {
-    font-size: 4em;
-  }
   #aboutPg{
     padding-top: 0;
+  }
+
+  #photo{
+    width: 32%;
+    height: 32%;
+    margin-left: 3%;
   }
 }

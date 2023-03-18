@@ -30,10 +30,10 @@
 <body id="aboutMe" class="min-h-screen dark:text-my-orange text-my-teal">
 
   <!-- nav bar -->
-  <section id="navHeader" class="h-24 p-5">         
+  <section id="navHeader" class="h-28 p-5">         
     <div data-dial-init class="fixed sm:static flex top-6 left-6 group">
       
-          <button type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class=" flex mr-2 items-center justify-center dark:text-my-teal dark:bg-my-orange rounded-sm w-20 h-20 sm:w-12 sm:h-12 dark:hover:bg-orange-300 text-my-orange bg-my-teal hover:bg-teal-800">
+          <button id="mainNavBtn" type="button" data-dial-toggle="speed-dial-menu-top-left" aria-controls="speed-dial-menu-horizontal" aria-expanded="false" class=" flex mr-2 items-center justify-center dark:text-my-teal dark:bg-my-orange rounded-sm w-20 h-20 sm:w-12 sm:h-12 dark:hover:bg-orange-300 text-my-orange bg-my-teal hover:bg-teal-800">
             <svg class="w-10 h-10 sm:w-6 sm:h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
               <span class="sr-only">Open actions menu</span>
           </button>
@@ -44,7 +44,7 @@
                 <span class="sr-only">Home button with bitmoji image</span>
             </button>
           </a>
-          <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip ">
+          <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium dark:text-my-teal dark:bg-my-border text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip ">
               Home
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -53,7 +53,7 @@
                 <span class="sr-only">About me button with bitmoji image</span>
             </button>
           </a>
-          <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
+          <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-border text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
             About Me
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -62,7 +62,7 @@
               <span class="sr-only">Projects button with bitmoji</span>
           </button>
           </a>
-          <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
+          <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-border text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
               Projects
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -71,7 +71,7 @@
             <span class="sr-only">Resume button with bitmoji image</span>
             </button>
           </a>
-          <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-orange text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
+          <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium  dark:text-my-teal dark:bg-my-border text-my-orange bg-my-teal transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip">
               Resume
               <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
@@ -90,41 +90,57 @@
 
 <!-- main body -->
 <main>
-  <section id="aboutPg" class="flex flex-row sm:flex-col">
-    <article id="about_letters" class="flex flex-col">
-      <div id="about">About</div>
-      <div id="me">Me</div>
-    </article>
+  <article id="about_letters">
+    <div id="about" class="2xl:pb-6">About Me</div>
+  </article>
+  <section id="aboutPg" class="flex flex-row justify-center sm:flex-col sm:pt-2">
+        <div id="photo" class="pr-10 ml-32 xl:mt-4">
+           <div id="pic" class="border-solid border-my-border rounded-full"> 
+            <img class="h-auto w-full rounded-3xl" src="./photos/profile_pic.jpg" alt="selfie">
+           </div>
+        </div>
 
-    
-  <article id="about_me_para" class="text-center border-solid border-red-500 border-2 font-custom">
-      <p>
-      I started my self-taught journey to coding in February of 2022 when I decided to leave active duty military service. I Learned mostly through free resources on DataCamp, Coursera, and other opportunities that I found. 
-      </p>
-    </article>
+      <article class="flex justify-around text-center">
+        <div id="about" class="text-center font-custom 2xl:pt-6">
+          <p class="sm:border-solid sm:border-t-2 sm:mt-6 sm:pb-6 xl:pb-0 xl:mt-3 sm:border-my-border border-none m-0 p-0"></p>
+          <p class="words sm:text-base xl:text-xl text-2xl">
+          I started my self-taught journey to coding in February of 2022 when I decided to leave active duty military service. I learned mostly 
+          through free resources on DataCamp, Coursera, and other opportunities that I found. 
+          </p>
+          <p class="sm:border-solid sm:border-t-2 sm:mt-6 sm:pb-6 xl:pb-0 xl:mt-3 sm:border-my-border border-none"></p>
+          <p class="words sm:text-base xl:text-xl text-2xl">
+            During my Software Development Program, I fell hard for Front-End Development. I've been improving my
+          skills ever since and have only seen my passion for Front-End Development grow.
+          </p>
+          <p class="sm:border-solid sm:border-t-2 sm:mt-6 sm:pb-6 xl:pb-0 xl:mt-3 sm:border-my-border border-none"></p>
+          <p class="words sm:text-base xl:text-xl text-2xl">
+            Outside of coding, I love to travel and eat new foods. I recently came back from Australia and now I wish there were Koalas in America! I also enjoy pouring my creativity into my DIY projects. In my most recent project, I turned a regular closet into a pantry for my kitchen.
+          </p>
+        </div>
+      </article>
   </section>
 </main>
 
 
 
 
-<footer id="icons" class=" bg-transparent fixed sm:static bottom-0 right-0">
-  <div class="sm:flex sm:justify-center md:flex md:justify-between mb-2 md:mb-0">              
+<footer id="icons" class=" bg-transparent fixed sm:static xl:static bottom-0 right-0">
+  <div class="sm:flex sm:justify-center md:flex md:justify-between mb-2 md:mb-0 xl:justify-end">              
     <div class="sm:flex sm:items-center sm:justify-evenly p-1 border-b-black">
-        <span class="text-sm text-my-teal  dark:text-my-orange pt-5 pr-1">© 2023 Created by Yours Truly.
+        <span class="text-sm text-my-teal  dark:text-my-border pt-5 pr-1">© 2023 Created by Yours Truly.
         </span>
         <div class="flex mt-4 space-x-3 p-2">
             <a href="https://github.com/brandi-jeff/" target="_blank" class="foot_btns text-my-orange hover:hover:text-teal-900 dark:hover:text-orange-300">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 -2 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                <svg class="w-5 h-5" fill="#BC9CEC" viewBox="0 -2 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
                 <span class="sr-only">GitHub account</span>
             </a>
             <a href="https://www.linkedin.com/in/brandi-jefferson/" target="_blank" class="foot_btns text-my-orange hover:text-teal-900 dark:hover:text-orange-300">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path
+                <svg class="w-5 h-5" fill="#BC9CEC" viewBox="0 0 24 24"><path
                   d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" /></svg>
                 <span class="sr-only">LinkedIn Account</span>
             </a>
             <a href="mailto:brandi.jefferson2@yahoo.com" class="foot_btns text-my-orange hover:text-teal-900 dark:hover:text-orange-300">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 -4 24 24" aria-hidden="true"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+              <svg class="w-5 h-5" fill="none" stroke="#BC9CEC" stroke-width="1.5" viewBox="0 -4 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
               <span class="sr-only">Email</span>
           </a>
         </div>

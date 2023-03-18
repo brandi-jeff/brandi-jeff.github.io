@@ -19,7 +19,7 @@ setTimeout(function () {
 }, 2370
 )
 
-// navBtn.addEventListener(onclick, () => {
-//   (aria-hidden === false ? true: false);
-// }
-// )
+navBtn.addEventListener(onclick, () => {
+  (aria-hidden === false ? true: false);
+}
+)

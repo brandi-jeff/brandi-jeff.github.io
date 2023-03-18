@@ -8,11 +8,15 @@ module.exports = {
       colors: {
         "my-teal": "#093A3A",
         "my-orange": "#eecda3",
+        "my-border": "#BC9CEC",
       },
     },
     screens: {
-      'xl': {'max':'1537px'},
-      // => @media (max-width: 1537px) { ... }
+        '2xl': {'max': '1921px'},
+        // => @media (max-width: 1921px) { ... }
+        
+        'xl': {'max':'1537px'},
+        // => @media (max-width: 1537px) { ... }
       
         'lg': {'max':'1024px'},
         // => @media (max-width: 1024px) { ... }
