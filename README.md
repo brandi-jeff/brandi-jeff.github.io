@@ -4,8 +4,8 @@
 
 ## Next Steps
 - I need to figure out if I like the color scheme
-- I Need to make it responsive
-- I need to add projects
+- I need to make it responsive
+- I need to add my projects
 
 
 ## Future
