@@ -106,12 +106,6 @@ html{
   transform: scale(1.5);
 }
 
-#icons{
-  z-index: -1;
-  width: 100%;
-  margin-top: auto;
-}
-
 #projects{
   position: relative;
   min-height: 100vh;
@@ -239,8 +233,4 @@ video{
 #wait{
   display: flex;
   justify-content: center;
-}
-
-#wait--bitmoji{
-  
 }
