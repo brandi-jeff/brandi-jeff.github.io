@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Projects</title>
 
      <!-- tailwind -->
      <link
@@ -27,7 +27,7 @@
    <link rel="stylesheet" href="./css/tailwind.css" />
    <link rel="stylesheet" href="../src/input.css" />
 </head>
-<body id="aboutMe" class="min-h-screen dark:text-my-orange text-my-teal">
+<body id="projects" class="min-h-screen dark:text-my-orange text-my-teal">
 
   <!-- nav bar -->
   <section id="navHeader" class="h-28 p-5">         
@@ -89,42 +89,19 @@
 </section>
 
 <!-- main body -->
-<main>
-  <article id="about_letters">
-    <div id="about" class="2xl:pb-6">About Me</div>
-  </article>
-  <section id="aboutPg" class="flex flex-row justify-center sm:flex-col sm:pt-2">
-        <div id="photo" class="pr-10 ml-32 xl:mt-4">
-           <div id="pic" class="border-solid border-my-border rounded-full"> 
-            <img class="h-auto w-full rounded-3xl" src="./photos/profile_pic.jpg" alt="selfie">
-           </div>
-        </div>
-
-      <article class="flex justify-around text-center">
-        <div id="about" class="text-center font-custom 2xl:pt-6">
-          <p class="sm:border-solid sm:border-t-2 sm:mt-6 sm:pb-6 xl:pb-0 xl:mt-3 sm:border-my-border border-none m-0 p-0"></p>
-          <p class="words sm:text-base xl:text-xl text-2xl">
-          I started my self-taught journey to coding in February of 2022 when I decided to leave active duty military service. I learned mostly 
-          through free resources on DataCamp, Coursera, and other opportunities that I found. 
-          </p>
-          <p class="sm:border-solid sm:border-t-2 sm:mt-6 sm:pb-6 xl:pb-0 xl:mt-3 sm:border-my-border border-none"></p>
-          <p class="words sm:text-base xl:text-xl text-2xl">
-            During my Software Development Program, I fell hard for Front-End Development. I've been improving my
-          Front-End skills and have also decided to learn Back-End for a little Razzle Dazzle! LoL 
-          </p>
-          <p class="sm:border-solid sm:border-t-2 sm:mt-6 sm:pb-6 xl:pb-0 xl:mt-3 sm:border-my-border border-none"></p>
-          <p class="words sm:text-base xl:text-xl text-2xl">
-            Outside of coding, I love to travel and eat new foods. I recently came back from Australia and now I wish there were Koalas in America! I also enjoy pouring my creativity into my DIY projects. In my most recent project, I turned a regular closet into a pantry for my kitchen.
-          </p>
-        </div>
-      </article>
-  </section>
+<main id="content">
+  <!-- <div id="scrolling">
+    <h1 id="scroll--child" class="dark:text-my-orange dark:font-custom">Projects coming soon!</h1>
+  </div> -->
+  <div id="wait" class="w-70 h-60">
+    <img id="wait--bitmoji" src="./photos/wait_for_it_bitmoji.svg" alt="wait for it words with bitmoji">
+  </div>
 </main>
 
 
 
 
-<footer id="icons" class=" bg-transparent fixed sm:static xl:static bottom-0 right-0">
+<footer id="icons" class=" foot bg-transparent fixed sm:static xl:static bottom-0 right-0">
   <div class="sm:flex sm:justify-center md:flex md:justify-between mb-2 md:mb-0 xl:justify-end">              
     <div class="sm:flex sm:items-center sm:justify-evenly p-1 border-b-black">
         <span class="text-sm text-my-teal  dark:text-my-border pt-5 pr-1">© 2023 Created by Yours Truly.
@@ -148,7 +125,7 @@
   </div>
 </footer>
      <!-- JS -->
-     <script src="./scripts/main.js"></script>
+     <script src="./scripts/projects.js"></script>
      <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </body>

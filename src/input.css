@@ -108,6 +108,29 @@ html{
 
 #icons{
   z-index: -1;
+  width: 100%;
+  margin-top: auto;
+}
+
+#projects{
+  position: relative;
+  min-height: 100vh;
+}
+#icons{
+  
+  z-index: -1;
+  
+}
+
+.foot{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+}
+
+#content{
+  padding-bottom: 4rem;
 }
 
 /* main body */
@@ -209,4 +232,15 @@ video{
     height: 32%;
     margin-left: 3%;
   }
+}
+
+
+/* projects page */
+#wait{
+  display: flex;
+  justify-content: center;
+}
+
+#wait--bitmoji{
+  
 }
